@@ -157,13 +157,12 @@ project (indentation, accurate comments, etc.) and any other requirements
 
 **Do not edit `bootstrap.css`, `bootstrap-theme.css`, or `bootstrap.js`
 directly!** Those files are automatically generated. You should edit the
-source files in [`/bootstrap/less/`](https://github.com/twbs/bootstrap/tree/master/less),
-[`/bootstrap/scss/`](https://github.com/twbs/bootstrap/tree/v4-dev/scss) (for Bootstrap v4),
-and/or [`/bootstrap/js/`](https://github.com/twbs/bootstrap/tree/master/js) instead.
+source files in [`/bootstrap/scss/`](https://github.com/twbs/bootstrap/tree/v4-dev/scss)
+and/or [`/bootstrap/js/`](https://github.com/twbs/bootstrap/tree/v4-dev/js) instead.
 
 Similarly, when contributing to Bootstrap's documentation, you should edit the
 documentation source files in
-[the `/bootstrap/docs/` directory of the `master` branch](https://github.com/twbs/bootstrap/tree/master/docs).
+[the `/bootstrap/docs/4.0` directory of the `v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev/docs/4.0).
 **Do not edit the `gh-pages` branch.** That branch is generated from the
 documentation source files and is managed separately by the Bootstrap Core Team.
 
@@ -185,8 +184,8 @@ included in the project:
 2. If you cloned a while ago, get the latest changes from upstream:
 
    ```bash
-   git checkout master
-   git pull upstream master
+   git checkout v4-dev
+   git pull upstream v4-dev
    ```
 
 3. Create a new topic branch (off the main project development branch) to
@@ -205,7 +204,7 @@ included in the project:
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   git pull [--rebase] upstream master
+   git pull [--rebase] upstream v4-dev
    ```
 
 6. Push your topic branch up to your fork:
@@ -215,7 +214,7 @@ included in the project:
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `master` branch.
+    with a clear title and description against the `v4-dev` branch.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MIT License](LICENSE) (if it
@@ -248,7 +247,7 @@ includes code changes) and under the terms of the
 [Adhere to the Code Guide.](http://codeguide.co/#css)
 
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
-- Except in rare cases, don't remove default `:focus` styles (via e.g. `outline: none;`) without providing alternative styles. See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
+- Except in rare cases, don't remove default `:focus` styles (via e.g. `outline: none;`) without providing alternative styles. See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines) for more details.
 
 ### JS
 
